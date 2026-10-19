@@ -1,0 +1,59 @@
+.mainSection { background: linear-gradient(180deg, #1a1a2e 0%, #16213e 100%); min-height: 100vh; padding-bottom: 80px; }
+.container { max-width: 1280px; margin: 0 auto; padding: 40px 24px; }
+.stats { display: flex; justify-content: center; gap: 50px; flex-wrap: wrap; margin-bottom: 40px; }
+.stat { text-align: center; }
+.stat strong { display: block; font-size: 2rem; font-weight: 800; color: #27ae60; }
+.stat span { font-size: 0.85rem; color: rgba(255,255,255,0.5); }
+.searchWrap { position: relative; max-width: 420px; margin: 0 auto 30px; }
+.search { width: 100%; padding: 14px 50px 14px 20px; border-radius: 50px; border: 2px solid rgba(39,174,96,0.3); background: rgba(255,255,255,0.05); color: #fff; font-family: inherit; font-size: 0.95rem; outline: none; transition: border-color 0.3s; }
+.search::placeholder { color: rgba(255,255,255,0.35); }
+.search:focus { border-color: #27ae60; }
+.searchIcon { position: absolute; right: 18px; top: 50%; transform: translateY(-50%); color: #27ae60; font-size: 1.1rem; }
+.filters { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; margin-bottom: 30px; }
+.filterBtn { display: flex; align-items: center; gap: 6px; padding: 9px 22px; border-radius: 50px; border: 2px solid rgba(39,174,96,0.3); background: transparent; color: rgba(255,255,255,0.75); font-family: inherit; font-size: 0.88rem; font-weight: 500; cursor: pointer; transition: all 0.3s; }
+.filterBtn:hover { border-color: #27ae60; color: #fff; }
+.filterActive { background: #27ae60; border-color: #27ae60; color: #fff; box-shadow: 0 6px 20px rgba(39,174,96,0.35); }
+.uploadZone { border: 2px dashed rgba(39,174,96,0.35); border-radius: 18px; padding: 36px; text-align: center; background: rgba(39,174,96,0.04); cursor: pointer; transition: all 0.3s; margin-bottom: 50px; }
+.uploadZone:hover { border-color: #27ae60; background: rgba(39,174,96,0.08); }
+.uploadZone i { font-size: 2.5rem; color: #27ae60; display: block; margin-bottom: 10px; }
+.uploadZone p { color: rgba(255,255,255,0.55); font-size: 0.92rem; margin: 0; }
+.uploadZone strong { color: #27ae60; }
+.noResults { text-align: center; padding: 60px 20px; color: rgba(255,255,255,0.35); }
+.noResults i { font-size: 3rem; display: block; margin-bottom: 12px; }
+/* Category */
+.catSection { margin-bottom: 70px; }
+.catHeader { display: flex; align-items: center; gap: 16px; margin-bottom: 28px; padding-bottom: 16px; border-bottom: 2px solid rgba(39,174,96,0.2); flex-wrap: wrap; }
+.catIcon { width: 50px; height: 50px; border-radius: 14px; background: linear-gradient(135deg,#27ae60,#2ecc71); display: flex; align-items: center; justify-content: center; font-size: 1.4rem; color: #fff; flex-shrink: 0; }
+.catTitle { font-size: 1.5rem; font-weight: 700; color: #fff; margin: 0; }
+.catSub { color: rgba(255,255,255,0.45); font-size: 0.82rem; margin: 2px 0 0; }
+.catCount { margin-left: auto; background: rgba(39,174,96,0.15); border: 1px solid rgba(39,174,96,0.35); color: #27ae60; padding: 5px 16px; border-radius: 50px; font-size: 0.82rem; font-weight: 600; white-space: nowrap; }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 18px; }
+/* Cards */
+.card { background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 16px; overflow: hidden; transition: all 0.35s; }
+.card:hover { transform: translateY(-6px); border-color: rgba(39,174,96,0.45); box-shadow: 0 20px 50px rgba(0,0,0,0.4); }
+.imgWrap { aspect-ratio: 1/1; overflow: hidden; cursor: pointer; position: relative; background: rgba(39,174,96,0.04); }
+.img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s; }
+.card:hover .img { transform: scale(1.08); }
+.overlay { position: absolute; inset: 0; background: linear-gradient(to top, rgba(0,0,0,0.65) 0%, transparent 50%); opacity: 0; transition: opacity 0.3s; display: flex; align-items: center; justify-content: center; }
+.card:hover .overlay { opacity: 1; }
+.zoomIcon { width: 46px; height: 46px; border-radius: 50%; background: rgba(255,255,255,0.2); backdrop-filter: blur(4px); display: flex; align-items: center; justify-content: center; color: #fff; font-size: 1.2rem; border: 2px solid rgba(255,255,255,0.35); }
+.placeholder { width: 100%; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px; }
+.placeholder p { color: rgba(255,255,255,0.3); font-size: 0.78rem; margin: 0; }
+.cardBody { padding: 12px 14px 14px; }
+.cardName { font-size: 0.88rem; font-weight: 600; color: #fff; margin: 0 0 8px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.row { display: flex; align-items: center; justify-content: space-between; }
+.badge { font-size: 0.72rem; font-weight: 600; padding: 3px 10px; border-radius: 20px; }
+.uploadBtn { background: rgba(255,255,255,0.08); border: none; border-radius: 8px; width: 28px; height: 28px; display: flex; align-items: center; justify-content: center; color: rgba(255,255,255,0.5); cursor: pointer; transition: all 0.2s; }
+.uploadBtn:hover { background: rgba(39,174,96,0.2); color: #27ae60; }
+/* Lightbox */
+.lightbox { position: fixed; inset: 0; background: rgba(0,0,0,0.93); z-index: 9999; display: flex; align-items: center; justify-content: center; padding: 20px; backdrop-filter: blur(10px); }
+.lbClose { position: fixed; top: 20px; right: 25px; width: 46px; height: 46px; border-radius: 50%; background: rgba(255,255,255,0.15); border: 2px solid rgba(255,255,255,0.3); color: #fff; font-size: 1.2rem; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: background 0.2s; z-index:10; }
+.lbClose:hover { background: rgba(231,76,60,0.6); }
+.lbNav { position: fixed; top: 50%; transform: translateY(-50%); width: 50px; height: 50px; border-radius: 50%; background: rgba(255,255,255,0.12); border: 2px solid rgba(255,255,255,0.25); color: #fff; font-size: 1.3rem; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: background 0.2s; z-index:10; }
+.lbNav:hover { background: rgba(39,174,96,0.5); }
+.lbPrev { left: 20px; }
+.lbNext { right: 20px; }
+.lbInner { display: flex; flex-direction: column; align-items: center; max-width: 90vw; }
+.lbImg { max-width: 100%; max-height: 80vh; border-radius: 14px; object-fit: contain; box-shadow: 0 30px 80px rgba(0,0,0,0.7); }
+.lbCaption { color: #fff; margin-top: 16px; font-size: 1rem; font-weight: 500; }
+@media (max-width: 560px) { .grid { grid-template-columns: repeat(2,1fr); gap: 12px; } }

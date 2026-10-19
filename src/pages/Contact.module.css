@@ -1,0 +1,39 @@
+.section { padding: 100px 0; background: linear-gradient(180deg,#1a1a2e,#16213e); }
+.container { max-width: 1280px; margin: 0 auto; padding: 0 24px; }
+.grid { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-bottom: 50px; }
+.infoPanel, .formPanel { background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 20px; padding: 36px; }
+.panelTitle { font-size: 1.2rem; font-weight: 700; color: #27ae60; margin-bottom: 28px; display: flex; align-items: center; gap: 10px; }
+.panelTitle i { color: #27ae60; }
+.infoItem { display: flex; gap: 16px; margin-bottom: 24px; }
+.infoItem i { color: #27ae60; font-size: 1.2rem; margin-top: 2px; flex-shrink: 0; }
+.infoItem h5 { color: #2ecc71; font-size: 0.9rem; font-weight: 600; margin-bottom: 4px; }
+.infoItem p { color: rgba(255,255,255,0.65); font-size: 0.9rem; margin: 0 0 2px; line-height: 1.6; }
+.infoItem a { color: rgba(255,255,255,0.65); text-decoration: none; transition: color 0.2s; }
+.infoItem a:hover { color: #27ae60; }
+.socials { display: flex; gap: 10px; margin-top: 24px; }
+.social { width: 38px; height: 38px; border-radius: 50%; background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.12); display: flex; align-items: center; justify-content: center; color: rgba(255,255,255,0.6); text-decoration: none; font-size: 1rem; transition: all 0.3s; }
+.social:hover { background: rgba(39,174,96,0.2); border-color: rgba(39,174,96,0.4); color: #27ae60; transform: translateY(-2px); }
+.form { display: flex; flex-direction: column; gap: 16px; }
+.input { width: 100%; padding: 14px 18px; border-radius: 12px; border: 2px solid rgba(39,174,96,0.25); background: rgba(255,255,255,0.06); color: #fff; font-family: inherit; font-size: 0.95rem; outline: none; transition: border-color 0.3s; }
+.input:focus { border-color: #27ae60; background: rgba(255,255,255,0.08); }
+.input option { background: #1a1a2e; color: #fff; }
+.input::placeholder { color: rgba(255,255,255,0.35); }
+.textarea { resize: vertical; min-height: 120px; }
+.submitBtn { display: flex; align-items: center; justify-content: center; gap: 8px; padding: 15px; background: linear-gradient(135deg,#27ae60,#2ecc71); color: #fff; border: none; border-radius: 12px; font-family: inherit; font-size: 1rem; font-weight: 600; cursor: pointer; transition: all 0.3s; box-shadow: 0 8px 25px rgba(39,174,96,0.35); }
+.submitBtn:hover:not(:disabled) { transform: translateY(-2px); box-shadow: 0 12px 35px rgba(39,174,96,0.5); }
+.submitBtn:disabled { opacity: 0.7; cursor: not-allowed; }
+.spinner { width: 18px; height: 18px; border: 2px solid rgba(255,255,255,0.3); border-top-color: #fff; border-radius: 50%; animation: spin 0.8s linear infinite; }
+@keyframes spin { to { transform: rotate(360deg); } }
+.successMsg { text-align: center; padding: 40px 20px; }
+.successMsg i { font-size: 3rem; color: #27ae60; display: block; margin-bottom: 16px; }
+.successMsg h4 { font-size: 1.4rem; font-weight: 700; color: #fff; margin-bottom: 8px; }
+.successMsg p { color: rgba(255,255,255,0.6); margin-bottom: 24px; }
+.resetBtn { padding: 12px 28px; background: transparent; border: 2px solid rgba(39,174,96,0.4); border-radius: 50px; color: #27ae60; font-family: inherit; font-weight: 600; cursor: pointer; transition: all 0.3s; }
+.resetBtn:hover { background: rgba(39,174,96,0.1); }
+.mapSection { background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); border-radius: 20px; padding: 36px; margin-bottom: 30px; }
+.mapWrap { border-radius: 14px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.4); }
+.emergencyBand { display: flex; align-items: center; gap: 24px; flex-wrap: wrap; background: rgba(231,76,60,0.08); border: 1px solid rgba(231,76,60,0.25); border-radius: 18px; padding: 28px 36px; }
+.emergencyBand h4 { color: #fff; font-weight: 700; margin-bottom: 4px; }
+.emergencyBand p { color: rgba(255,255,255,0.6); margin: 0; font-size: 0.9rem; }
+.emergencyBtns { margin-left: auto; }
+@media (max-width: 768px) { .grid { grid-template-columns: 1fr; } .emergencyBand { flex-direction: column; } .emergencyBtns { width: 100%; } }
